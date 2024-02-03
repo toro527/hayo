@@ -42,6 +42,9 @@ body {
   font-size: 1.4rem;
   margin: 0;
 } /*font-size : 14px と同等*/
+.wrap {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }

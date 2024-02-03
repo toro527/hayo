@@ -10,6 +10,10 @@ body {
   font-size: 1.4rem;
   margin: 0;
 } /*font-size : 14px と同等*/
+.wrap {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -391,7 +395,7 @@ main .mv {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-  height: 40vh;
+  height: 38vh;
   z-index: 1;
 }
 @media screen and (min-width: 1023px) {
@@ -495,10 +499,12 @@ main .work .contents p {
 main .strength {
   z-index: 1;
   position: relative;
+  padding-bottom: 5rem;
 }
 @media screen and (min-width: 1023px) {
   main .strength {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding-bottom: 10rem;
   }
 }
 main .strength_wrap {
@@ -631,16 +637,16 @@ main .strength_btm p {
     padding: 5rem 0;
     font-size: 2rem;
     line-height: 3.5rem;
-    margin: 0 auto 15rem;
+    margin: 0 auto 10rem;
   }
 }
 main .staff {
-  padding: 5rem 0;
+  padding: 0;
 }
 @media screen and (min-width: 1023px) {
   main .staff {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding: 15rem 0;
+    padding: 0;
   }
 }
 main .staff_box {
@@ -747,12 +753,13 @@ main .staff_box_item .link {
   }
 }
 main .blog {
-  padding: 0 0 5rem;
+  background-color: #fff;
+  padding: 5rem 0;
 }
 @media screen and (min-width: 1023px) {
   main .blog {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding: 0 0 15rem 0;
+    padding: 15rem 0;
   }
 }
 @media screen and (min-width: 1023px) {
