@@ -293,7 +293,7 @@ h2 {
 /**パンくず***/
 .breadcrumb {
   width: 100%;
-  background-color: #ed8000;
+  background-color: #222;
   color: #fff;
   height: 3rem;
   line-height: 3rem;
@@ -301,6 +301,7 @@ h2 {
 @media screen and (min-width: 1023px) {
   .breadcrumb {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    background-color: #ed8000;
   }
 }
 .breadcrumb a {

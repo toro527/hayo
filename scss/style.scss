@@ -299,11 +299,12 @@ h2 {
 /**パンくず***/
 .breadcrumb {
   width: 100%;
-  background-color: $color_sub;
+  background-color: $color_main;
   color: #fff;
   height: 3rem;
   line-height: 3rem;
   @include tab() {
+    background-color: $color_sub;
   }
   a {
     color: #fff;
