@@ -65,7 +65,7 @@ figure {
 @media screen and (min-width: 1023px) {
   .contents {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
   }
 }
