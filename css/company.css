@@ -439,7 +439,7 @@ h2 {
   }
 }
 .company .info {
-  padding: 3rem 0;
+  padding: 3rem 0 0;
 }
 @media screen and (min-width: 1023px) {
   .company .info {
@@ -518,9 +518,9 @@ h2 {
 .company .photos {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem;
 }
 @media screen and (min-width: 1023px) {
   .company .photos {
@@ -528,6 +528,24 @@ h2 {
     width: 80%;
     flex-direction: row;
     gap: 3rem;
+  }
+}
+.company .photos figure {
+  padding: 5px;
+}
+@media screen and (min-width: 1023px) {
+  .company .photos figure {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding: unset;
+  }
+}
+.company .photos figure img {
+  height: 16rem;
+}
+@media screen and (min-width: 1023px) {
+  .company .photos figure img {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    height: 40rem;
   }
 }
 .company .access {

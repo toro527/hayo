@@ -48,7 +48,7 @@
     }
   }
   .info {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
     @include tab() {
       padding: 5rem 0;
     }
@@ -108,13 +108,25 @@
   .photos {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem;
     @include tab() {
       width: 80%;
       flex-direction: row;
       gap: 3rem;
+    }
+    figure {
+      padding: 5px;
+      @include tab() {
+        padding: unset;
+      }
+      img {
+        height: 16rem;
+        @include tab() {
+          height: 40rem;
+        }
+      }
     }
   }
   .access {
