@@ -100,9 +100,7 @@ main {
   .strength {
     z-index: 1;
     position: relative;
-    padding-bottom: 5rem;
     @include tab() {
-      padding-bottom: 10rem;
     }
 
     &_wrap {
@@ -112,7 +110,7 @@ main {
       background-position: center;
       background-size: cover;
       @include tab() {
-        padding: 15rem 0 27rem;
+        padding: 15rem 0 8rem;
         background-size: 100%;
       }
       &:after {
@@ -196,25 +194,9 @@ main {
     }
     &_btm {
       padding: 0;
-      margin: -5rem 0 0 0;
+      margin: 1rem 0 0 0;
       @include tab() {
-        margin: -15rem auto 0;
-      }
-      p {
-        width: 85%;
-        padding: 3rem 1.5rem;
-        background-color: $color_sub;
-        line-height: 2.5rem;
-        font-size: 1.6rem;
-        color: #fff;
-        margin: 0 auto 5rem;
-        @include tab() {
-          text-align: center;
-          padding: 5rem 0;
-          font-size: 2rem;
-          line-height: 3.5rem;
-          margin: 0 auto 10rem;
-        }
+        margin: 5rem auto;
       }
     }
   }
@@ -232,12 +214,11 @@ main {
         justify-content: center;
       }
       figure {
-        order: 1;
+        margin-bottom: -5px;
         @include tab() {
           overflow: hidden;
           max-height: 60rem;
           width: 65%;
-          order: 2;
         }
 
         img {
@@ -250,13 +231,11 @@ main {
       &_item {
         margin-top: -4px;
         background-color: #222;
-        order: 2;
         padding: 5rem 1.5rem;
         @include tab() {
           margin-top: unset;
           padding: 15rem 0 16rem;
           width: 40%;
-          order: 1;
         }
         h2 {
           position: relative;
@@ -413,7 +392,7 @@ main {
           top: 1rem;
           left: -2rem;
           @include tab() {
-            left: 26rem;
+            left: 32%;
             top: 1.7rem;
           }
         }

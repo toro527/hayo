@@ -92,7 +92,6 @@
         flex-direction: column;
         @include tab() {
           flex-direction: row;
-          align-items: center;
           gap: 5rem;
         }
         figure {
@@ -187,7 +186,7 @@
           top: 1rem;
           left: -2rem;
           @include tab() {
-            left: 26rem;
+            left: 32%;
             top: 1.7rem;
           }
         }

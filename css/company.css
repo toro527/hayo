@@ -293,7 +293,7 @@ h2 {
 /**パンくず***/
 .breadcrumb {
   width: 100%;
-  background-color: #ed8000;
+  background-color: #222;
   color: #fff;
   height: 3rem;
   line-height: 3rem;
@@ -301,6 +301,7 @@ h2 {
 @media screen and (min-width: 1023px) {
   .breadcrumb {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    background-color: #ed8000;
   }
 }
 .breadcrumb a {
@@ -426,85 +427,6 @@ h2 {
   .company .mv h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     top: -1rem;
-  }
-}
-.company .message {
-  padding: 5rem 1.5rem 2rem;
-}
-@media screen and (min-width: 1023px) {
-  .company .message {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    width: 100%;
-    padding: 10rem 0;
-  }
-}
-.company .message h2 {
-  position: relative;
-  margin: 0 0 1.5rem 2rem;
-}
-@media screen and (min-width: 1023px) {
-  .company .message h2 {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    margin: 0 0 2rem 0;
-  }
-}
-.company .message h2 .sankaku {
-  top: -1rem;
-  left: -2rem;
-}
-@media screen and (min-width: 1023px) {
-  .company .message h2 .sankaku {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    top: -2rem;
-    left: -1rem;
-  }
-}
-.company .message .message_box {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1023px) {
-  .company .message .message_box {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    flex-direction: row;
-    gap: 5rem;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .company .message .message_box figure {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    width: 45%;
-  }
-}
-.company .message .message_box figure figcaption {
-  text-align: center;
-  font-family: serif;
-  font-size: 1.5rem;
-  padding-top: 1rem;
-}
-@media screen and (min-width: 1023px) {
-  .company .message .message_box figure figcaption {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    font-size: 1.7rem;
-  }
-}
-.company .message .message_box p {
-  line-height: 3rem;
-  font-size: 1.6rem;
-}
-@media screen and (min-width: 1023px) {
-  .company .message .message_box p {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding-bottom: 7rem;
-    font-size: 1.7rem;
-    line-height: 4rem;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .company .message .message80 {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    width: 80%;
-    margin: 0 auto;
   }
 }
 .company #info {
@@ -676,7 +598,7 @@ h2 {
 @media screen and (min-width: 1023px) {
   .company .contact_us .contents h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    left: 26rem;
+    left: 32%;
     top: 1.7rem;
   }
 }

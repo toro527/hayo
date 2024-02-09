@@ -503,7 +503,6 @@ h2 {
   .staff .members .members_box_item {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     flex-direction: row;
-    align-items: center;
     gap: 5rem;
   }
 }
@@ -612,7 +611,7 @@ h2 {
 @media screen and (min-width: 1023px) {
   .staff .contact_us .contents h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    left: 26rem;
+    left: 32%;
     top: 1.7rem;
   }
 }

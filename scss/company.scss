@@ -40,66 +40,7 @@
       }
     }
   }
-  .message {
-    padding: 5rem 1.5rem 2rem;
-    @include tab() {
-      width: 100%;
-      padding: 10rem 0;
-    }
 
-    h2 {
-      position: relative;
-      margin: 0 0 1.5rem 2rem;
-      @include tab() {
-        margin: 0 0 2rem 0;
-      }
-      .sankaku {
-        top: -1rem;
-        left: -2rem;
-        @include tab() {
-          top: -2rem;
-          left: -1rem;
-        }
-      }
-    }
-    .message_box {
-      display: flex;
-      flex-direction: column;
-      @include tab() {
-        flex-direction: row;
-        gap: 5rem;
-      }
-      figure {
-        @include tab() {
-          width: 45%;
-        }
-        figcaption {
-          text-align: center;
-          font-family: serif;
-          font-size: 1.5rem;
-          padding-top: 1rem;
-          @include tab() {
-            font-size: 1.7rem;
-          }
-        }
-      }
-      p {
-        line-height: 3rem;
-        font-size: 1.6rem;
-        @include tab() {
-          padding-bottom: 7rem;
-          font-size: 1.7rem;
-          line-height: 4rem;
-        }
-      }
-    }
-    .message80 {
-      @include tab() {
-        width: 80%;
-        margin: 0 auto;
-      }
-    }
-  }
   #info {
     background-color: #f7f6f2;
     @include tab() {
@@ -223,7 +164,7 @@
           top: 1rem;
           left: -2rem;
           @include tab() {
-            left: 26rem;
+            left: 32%;
             top: 1.7rem;
           }
         }
