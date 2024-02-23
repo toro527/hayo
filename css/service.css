@@ -654,6 +654,7 @@ h2 {
 .service #service #new,
 .service #service #add {
   background-color: #f7f6f2;
+  margin-bottom: 5rem;
 }
 @media screen and (min-width: 1023px) {
   .service #service #buy,
@@ -672,7 +673,7 @@ h2 {
 .service #service #brake .buy,
 .service #service #new .buy,
 .service #service #add .buy {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
 }
 @media screen and (min-width: 1023px) {
   .service #service #buy .buy,
@@ -832,6 +833,32 @@ h2 {
     width: 60%;
   }
 }
+.service #service #plan .sankaku,
+.service #service #brake .sankaku,
+.service #service #news .sankaku {
+  top: -2rem;
+  left: 7rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #plan .sankaku,
+  .service #service #brake .sankaku,
+  .service #service #news .sankaku {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    top: -1.5rem;
+    left: 43%;
+  }
+}
+.service #service #add .sankaku {
+  top: -2rem;
+  left: 3rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #add .sankaku {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    top: -1.5rem;
+    left: 43%;
+  }
+}
 .service #service #separate,
 .service #service #brake,
 .service #service #add {
@@ -847,7 +874,7 @@ h2 {
 .service #service #separate .buy,
 .service #service #brake .buy,
 .service #service #add .buy {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
 }
 @media screen and (min-width: 1023px) {
   .service #service #separate .buy,
@@ -860,8 +887,15 @@ h2 {
 .service #service section::before {
   content: "";
   display: block;
-  padding-top: 80px;
-  margin-top: -80px;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+@media screen and (min-width: 1023px) {
+  .service #service section::before {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding-top: 80px;
+    margin-top: -80px;
+  }
 }
 .service .photos {
   width: 100%;

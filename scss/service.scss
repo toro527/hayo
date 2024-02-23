@@ -215,11 +215,12 @@
     #new,
     #add {
       background-color: #f7f6f2;
+      margin-bottom: 5rem;
       @include tab() {
         margin-bottom: 5rem;
       }
       .buy {
-        padding: 2rem 0;
+        padding: 2rem 1.5rem;
         @include tab() {
           padding: 5rem 0 3rem;
         }
@@ -285,6 +286,28 @@
         }
       }
     }
+    #plan,
+    #brake,
+    #news {
+      .sankaku {
+        top: -2rem;
+        left: 7rem;
+        @include tab() {
+          top: -1.5rem;
+          left: 43%;
+        }
+      }
+    }
+    #add {
+      .sankaku {
+        top: -2rem;
+        left: 3rem;
+        @include tab() {
+          top: -1.5rem;
+          left: 43%;
+        }
+      }
+    }
     #separate,
     #brake,
     #add {
@@ -296,7 +319,7 @@
         }
       }
       .buy {
-        padding: 2rem 0;
+        padding: 2rem 1.5rem;
         @include tab() {
           padding: 5rem 0 3rem;
         }
@@ -305,8 +328,12 @@
     section::before {
       content: "";
       display: block;
-      padding-top: 80px;
-      margin-top: -80px;
+      padding-top: 40px;
+      margin-top: -40px;
+      @include tab() {
+        padding-top: 80px;
+        margin-top: -80px;
+      }
     }
   }
 
