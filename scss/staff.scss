@@ -93,6 +93,7 @@
         @include tab() {
           flex-direction: row;
           gap: 5rem;
+          align-items: center;
         }
         figure {
           @include tab() {
@@ -117,6 +118,10 @@
             .text {
               padding-left: 1.5rem;
               font-size: 1.6rem;
+              line-height: 1.6;
+              @include tab() {
+                line-height: 2;
+              }
             }
           }
         }
