@@ -130,7 +130,7 @@ h2 {
 @media screen and (min-width: 1023px) {
   .header {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    height: 16rem;
+    height: 12rem;
   }
 }
 
@@ -144,6 +144,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0 0 0;
 }
 .header_inner_pc .nav_inner li {
   padding-right: 4rem;
@@ -383,12 +384,12 @@ h2 {
   height: auto;
 }
 
-/* company */
-.company {
+/* service */
+.service {
   width: 100%;
   margin-top: 7rem;
 }
-.company .mv {
+.service .mv {
   position: relative;
   overflow: hidden;
   background-image: url("../images/common/company_head.jpg");
@@ -400,75 +401,87 @@ h2 {
   opacity: 0.6;
 }
 @media screen and (min-width: 1023px) {
-  .company .mv {
+  .service .mv {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     height: 45vh;
     background-image: url("../images/common/company_head.jpg");
   }
 }
-.company .mv h2 {
+.service .mv h2 {
   position: absolute;
   top: 20%;
   left: 15%;
   color: #fff;
 }
 @media screen and (min-width: 1023px) {
-  .company .mv h2 {
+  .service .mv h2 {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     top: 50%;
     left: 15%;
   }
 }
-.company .mv h2 .sankaku {
+.service .mv h2 .sankaku {
   left: -1rem;
   top: -1.5rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .mv h2 .sankaku {
+  .service .mv h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     top: -1rem;
   }
 }
-.company #info {
+.service h3 {
+  font-size: 2rem;
+  border-left: 5px solid #ed8000;
+  border-bottom: 1px solid #ed8000;
+  padding: 0 3rem 0 1rem;
+}
+@media screen and (min-width: 1023px) {
+  .service h3 {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    line-height: 2;
+  }
+}
+.service #tuyomi {
   background-color: #f7f6f2;
 }
 @media screen and (min-width: 1023px) {
-  .company #info {
+  .service #tuyomi {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding-bottom: 3rem;
+    padding: 5rem 0 3rem;
   }
 }
-.company .info {
-  padding: 3rem 0 0;
+.service .tuyomi {
+  padding: 3rem 1.5rem 0;
 }
 @media screen and (min-width: 1023px) {
-  .company .info {
+  .service .tuyomi {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     padding: 5rem 0;
   }
 }
-.company .info h2 {
+.service .tuyomi h2 {
   position: relative;
   text-align: center;
   margin-bottom: 0;
 }
 @media screen and (min-width: 1023px) {
-  .company .info h2 {
+  .service .tuyomi h2 {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
   }
 }
-.company .info h2 .sankaku {
+.service .tuyomi h2 .sankaku {
   top: -1rem;
-  left: 14rem;
+  left: 10rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .info h2 .sankaku {
+  .service .tuyomi h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     top: -1.5rem;
     left: 43%;
   }
 }
-.company .info .info-box {
+.service .tuyomi .tuyomi-box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -476,46 +489,381 @@ h2 {
   padding: 1rem 0;
 }
 @media screen and (min-width: 1023px) {
-  .company .info .info-box {
+  .service .tuyomi .tuyomi-box {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    align-items: center;
     width: 80%;
     flex-direction: row;
     font-size: 1.5rem;
   }
 }
-.company .info .info-box-item {
-  padding: 1rem;
+.service .tuyomi .tuyomi-box h2 {
+  position: relative;
 }
 @media screen and (min-width: 1023px) {
-  .company .info .info-box-item {
+  .service .tuyomi .tuyomi-box h2 {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding: 1.5rem;
+    width: 40%;
   }
 }
-.company .info .info-box-item:first-child {
-  font-weight: bold;
-  font-size: 1.6rem;
-  border-bottom: 1px solid #ed8000;
-  margin: 1rem;
+.service .tuyomi .tuyomi-box h2 .sankaku {
+  top: -1rem;
+  left: 10rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .info .info-box-item:first-child {
+  .service .tuyomi .tuyomi-box h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    width: 20%;
+    top: -1.5rem;
+    left: 43%;
+  }
+}
+.service .tuyomi .tuyomi-box-text {
+  padding: 1rem 0;
+}
+@media screen and (min-width: 1023px) {
+  .service .tuyomi .tuyomi-box-text {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding: 1.5rem;
+    width: 60%;
+  }
+}
+.service .tuyomi .tuyomi-box-text p {
+  line-height: 2;
+}
+.service #gyoumu .gyoumu {
+  padding: 3rem 1.5rem 0;
+}
+@media screen and (min-width: 1023px) {
+  .service #gyoumu .gyoumu {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding: 3rem 1.5rem 12rem;
+  }
+}
+.service #gyoumu .gyoumu h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #gyoumu .gyoumu h2 {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+  }
+}
+.service #gyoumu .gyoumu h2 .sankaku {
+  top: -1rem;
+  left: 10rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #gyoumu .gyoumu h2 .sankaku {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    top: -1.5rem;
+    left: 43%;
+  }
+}
+.service #gyoumu .gyoumu ul {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #gyoumu .gyoumu ul {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding-bottom: 0;
+  }
+}
+.service #gyoumu .gyoumu ul li {
+  width: 100%;
+}
+@media screen and (min-width: 1023px) {
+  .service #gyoumu .gyoumu ul li {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    width: 30%;
+  }
+}
+.service #gyoumu .gyoumu ul li a {
+  color: #ed8000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #ed8000;
+  line-height: 5rem;
+  font-size: 1.6rem;
+}
+.service #gyoumu .gyoumu ul li a span {
+  padding-right: 1.5rem;
+}
+.service #gyoumu .gyoumu a:hover {
+  background-color: #ed8000;
+  color: #fff;
+}
+.service #service h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #service h2 {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    margin-top: 0;
+  }
+}
+.service #service h2 .sankaku {
+  top: -1rem;
+  left: 10rem;
+}
+@media screen and (min-width: 1023px) {
+  .service #service h2 .sankaku {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    top: -1.5rem;
+    left: 43%;
+  }
+}
+.service #service .catch {
+  margin: 0 0 3rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (min-width: 1023px) {
+  .service #service .catch {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    line-height: 2;
     font-size: 1.8rem;
   }
 }
-.company .info .info-box-item:nth-child(2) {
-  border-bottom: 1px solid #000;
-  margin: 1rem;
+.service #service .text,
+.service #service .text-right {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 @media screen and (min-width: 1023px) {
-  .company .info .info-box-item:nth-child(2) {
+  .service #service .text,
+  .service #service .text-right {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    width: 75%;
+    line-height: 2;
   }
 }
-.company .photos {
+.service #service #buy,
+.service #service #separate,
+.service #service #plan,
+.service #service #brake,
+.service #service #new,
+.service #service #add {
+  background-color: #f7f6f2;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy,
+  .service #service #separate,
+  .service #service #plan,
+  .service #service #brake,
+  .service #service #new,
+  .service #service #add {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    margin-bottom: 5rem;
+  }
+}
+.service #service #buy .buy,
+.service #service #separate .buy,
+.service #service #plan .buy,
+.service #service #brake .buy,
+.service #service #new .buy,
+.service #service #add .buy {
+  padding: 2rem 0;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy,
+  .service #service #separate .buy,
+  .service #service #plan .buy,
+  .service #service #brake .buy,
+  .service #service #new .buy,
+  .service #service #add .buy {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding: 5rem 0 3rem;
+  }
+}
+.service #service #buy .buy .wrap .box,
+.service #service #separate .buy .wrap .box,
+.service #service #plan .buy .wrap .box,
+.service #service #brake .buy .wrap .box,
+.service #service #new .buy .wrap .box,
+.service #service #add .buy .wrap .box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 2rem 0;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box,
+  .service #service #separate .buy .wrap .box,
+  .service #service #plan .buy .wrap .box,
+  .service #service #brake .buy .wrap .box,
+  .service #service #new .buy .wrap .box,
+  .service #service #add .buy .wrap .box {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.service #service #buy .buy .wrap .box img,
+.service #service #separate .buy .wrap .box img,
+.service #service #plan .buy .wrap .box img,
+.service #service #brake .buy .wrap .box img,
+.service #service #new .buy .wrap .box img,
+.service #service #add .buy .wrap .box img {
+  border-radius: 5px;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box img,
+  .service #service #separate .buy .wrap .box img,
+  .service #service #plan .buy .wrap .box img,
+  .service #service #brake .buy .wrap .box img,
+  .service #service #new .buy .wrap .box img,
+  .service #service #add .buy .wrap .box img {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+  }
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box figure,
+  .service #service #separate .buy .wrap .box figure,
+  .service #service #plan .buy .wrap .box figure,
+  .service #service #brake .buy .wrap .box figure,
+  .service #service #new .buy .wrap .box figure,
+  .service #service #add .buy .wrap .box figure {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding-top: 3rem;
+  }
+}
+.service #service #buy .buy .wrap .box .right,
+.service #service #separate .buy .wrap .box .right,
+.service #service #plan .buy .wrap .box .right,
+.service #service #brake .buy .wrap .box .right,
+.service #service #new .buy .wrap .box .right,
+.service #service #add .buy .wrap .box .right {
+  order: 1;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box .right,
+  .service #service #separate .buy .wrap .box .right,
+  .service #service #plan .buy .wrap .box .right,
+  .service #service #brake .buy .wrap .box .right,
+  .service #service #new .buy .wrap .box .right,
+  .service #service #add .buy .wrap .box .right {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    width: 30%;
+    order: 2;
+  }
+}
+.service #service #buy .buy .wrap .box .right img,
+.service #service #separate .buy .wrap .box .right img,
+.service #service #plan .buy .wrap .box .right img,
+.service #service #brake .buy .wrap .box .right img,
+.service #service #new .buy .wrap .box .right img,
+.service #service #add .buy .wrap .box .right img {
+  max-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box .right img,
+  .service #service #separate .buy .wrap .box .right img,
+  .service #service #plan .buy .wrap .box .right img,
+  .service #service #brake .buy .wrap .box .right img,
+  .service #service #new .buy .wrap .box .right img,
+  .service #service #add .buy .wrap .box .right img {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    max-height: 350px;
+    width: auto;
+  }
+}
+.service #service #buy .buy .wrap .box .text,
+.service #service #separate .buy .wrap .box .text,
+.service #service #plan .buy .wrap .box .text,
+.service #service #brake .buy .wrap .box .text,
+.service #service #new .buy .wrap .box .text,
+.service #service #add .buy .wrap .box .text {
+  order: 2;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box .text,
+  .service #service #separate .buy .wrap .box .text,
+  .service #service #plan .buy .wrap .box .text,
+  .service #service #brake .buy .wrap .box .text,
+  .service #service #new .buy .wrap .box .text,
+  .service #service #add .buy .wrap .box .text {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    order: 1;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box .left,
+  .service #service #separate .buy .wrap .box .left,
+  .service #service #plan .buy .wrap .box .left,
+  .service #service #brake .buy .wrap .box .left,
+  .service #service #new .buy .wrap .box .left,
+  .service #service #add .buy .wrap .box .left {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    width: 35%;
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box .text,
+  .service #service #separate .buy .wrap .box .text,
+  .service #service #plan .buy .wrap .box .text,
+  .service #service #brake .buy .wrap .box .text,
+  .service #service #new .buy .wrap .box .text,
+  .service #service #add .buy .wrap .box .text {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    width: 70%;
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .service #service #buy .buy .wrap .box .text-right,
+  .service #service #separate .buy .wrap .box .text-right,
+  .service #service #plan .buy .wrap .box .text-right,
+  .service #service #brake .buy .wrap .box .text-right,
+  .service #service #new .buy .wrap .box .text-right,
+  .service #service #add .buy .wrap .box .text-right {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    width: 60%;
+  }
+}
+.service #service #separate,
+.service #service #brake,
+.service #service #add {
+  background-color: #fff;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #separate,
+  .service #service #brake,
+  .service #service #add {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+  }
+}
+.service #service #separate .buy,
+.service #service #brake .buy,
+.service #service #add .buy {
+  padding: 2rem 0;
+}
+@media screen and (min-width: 1023px) {
+  .service #service #separate .buy,
+  .service #service #brake .buy,
+  .service #service #add .buy {
+    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+    padding: 5rem 0 3rem;
+  }
+}
+.service #service section::before {
+  content: "";
+  display: block;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.service .photos {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -523,90 +871,57 @@ h2 {
   padding: 1rem 0 2rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .photos {
+  .service .photos {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     width: 80%;
     flex-direction: row;
     gap: 3rem;
   }
 }
-.company .photos figure {
+.service .photos figure {
   padding: 5px;
 }
 @media screen and (min-width: 1023px) {
-  .company .photos figure {
+  .service .photos figure {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     padding: unset;
   }
 }
-.company .photos figure img {
+.service .photos figure img {
   height: 16rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .photos figure img {
+  .service .photos figure img {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     height: 40rem;
   }
 }
-.company .access {
-  padding: 3rem 0 0;
-}
-@media screen and (min-width: 1023px) {
-  .company .access {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding: 5rem 0 0;
-  }
-}
-.company .access h2 {
-  position: relative;
-  text-align: center;
-}
-@media screen and (min-width: 1023px) {
-  .company .access h2 {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-  }
-}
-.company .access h2 .sankaku {
-  top: -1rem;
-  left: 14rem;
-}
-@media screen and (min-width: 1023px) {
-  .company .access h2 .sankaku {
-    /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    top: -1.5rem;
-    left: 46%;
-  }
-}
-.company .access iframe {
-  width: 100%;
-  height: 40rem;
-}
-.company .contact_us {
+.service .contact_us {
   background-color: #f7f6f2;
   padding: 5rem 0;
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us {
+  .service .contact_us {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     padding: 10rem 0;
   }
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us .contents {
+  .service .contact_us .contents {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
   }
 }
-.company .contact_us .contents h2 {
+.service .contact_us .contents h2 {
   position: relative;
   margin: 0 0 0 2rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us .contents h2 {
+  .service .contact_us .contents h2 {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     text-align: center;
   }
 }
-.company .contact_us .contents h2 .sankaku {
+.service .contact_us .contents h2 .sankaku {
   transform: rotate(0);
   border-width: 7px 0 7px 12px;
   border-color: transparent transparent transparent #ed8000;
@@ -614,36 +929,36 @@ h2 {
   left: -2rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us .contents h2 .sankaku {
+  .service .contact_us .contents h2 .sankaku {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     left: 32%;
     top: 1.7rem;
   }
 }
-.company .contact_us .contents p {
+.service .contact_us .contents p {
   font-size: 1.8rem;
   padding-bottom: 2rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us .contents p {
+  .service .contact_us .contents p {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     padding-bottom: 5rem;
     text-align: center;
     font-size: 2rem;
   }
 }
-.company .contact_us .contents .contact_btns {
+.service .contact_us .contents .contact_btns {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us .contents .contact_btns {
+  .service .contact_us .contents .contact_btns {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     flex-direction: row;
     gap: 0 10rem;
   }
 }
-.company .contact_us .contents .contact_btns_link {
+.service .contact_us .contents .contact_btns_link {
   position: relative;
   width: 100%;
   display: flex;
@@ -658,7 +973,7 @@ h2 {
   margin: 0 auto 2rem;
 }
 @media screen and (min-width: 1023px) {
-  .company .contact_us .contents .contact_btns_link {
+  .service .contact_us .contents .contact_btns_link {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
     height: 5rem;
     font-size: 1.8rem;
@@ -666,15 +981,15 @@ h2 {
     margin: 0 auto;
   }
 }
-.company .contact_us .contents .contact_btns_link:last-child {
+.service .contact_us .contents .contact_btns_link:last-child {
   font-size: 2rem;
   margin: 0 auto;
 }
-.company .contact_us .contents .contact_btns_link .material-symbols-outlined {
+.service .contact_us .contents .contact_btns_link .material-symbols-outlined {
   padding-right: 1rem;
   font-size: 2rem;
 }
-.company .contact_us .contents .contact_btns_link .material-symbols-outlined :before {
+.service .contact_us .contents .contact_btns_link .material-symbols-outlined :before {
   font-family: "Material Icons";
   content: "e0b0";
-}/*# sourceMappingURL=company.css.map */
+}/*# sourceMappingURL=service.css.map */

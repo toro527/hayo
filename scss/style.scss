@@ -130,7 +130,7 @@ h2 {
   right: 0;
   z-index: 999;
   @include tab() {
-    height: 16rem;
+    height: 12rem;
   }
 }
 
@@ -140,10 +140,11 @@ h2 {
   justify-content: center;
   .nav {
     &_inner {
-      height: 16rem;
+      height: 12rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 1rem 0 0 0;
       li {
         padding-right: 4rem;
         a {

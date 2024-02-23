@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+@import "style";
+
+/* service */
+
+.service {
+  width: 100%;
+  margin-top: 7rem;
+
+  .mv {
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/common/company_head.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 13vh;
+    z-index: 1;
+    opacity: 0.6;
+    @include tab() {
+      height: 45vh;
+      background-image: url("../images/common/company_head.jpg");
+    }
+    h2 {
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      color: #fff;
+      @include tab() {
+        top: 50%;
+        left: 15%;
+      }
+      .sankaku {
+        left: -1rem;
+        top: -1.5rem;
+        @include tab() {
+          top: -1rem;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    border-left: 5px solid $color_sub;
+    border-bottom: 1px solid $color_sub;
+    padding: 0 3rem 0 1rem;
+    @include tab() {
+      line-height: 2;
+    }
+  }
+  #tuyomi {
+    background-color: #f7f6f2;
+    @include tab() {
+      padding: 5rem 0 3rem;
+    }
+  }
+  .tuyomi {
+    padding: 3rem 1.5rem 0;
+    @include tab() {
+      padding: 5rem 0;
+    }
+    h2 {
+      position: relative;
+      text-align: center;
+      margin-bottom: 0;
+      @include tab() {
+      }
+      .sankaku {
+        top: -1rem;
+        left: 10rem;
+        @include tab() {
+          top: -1.5rem;
+          left: 43%;
+        }
+      }
+    }
+    .tuyomi-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 1rem 0;
+      @include tab() {
+        align-items: center;
+        width: 80%;
+        flex-direction: row;
+        font-size: 1.5rem;
+      }
+      h2 {
+        position: relative;
+        @include tab() {
+          width: 40%;
+        }
+        .sankaku {
+          top: -1rem;
+          left: 10rem;
+          @include tab() {
+            top: -1.5rem;
+            left: 43%;
+          }
+        }
+      }
+      &-text {
+        padding: 1rem 0;
+        @include tab() {
+          padding: 1.5rem;
+          width: 60%;
+        }
+
+        p {
+          line-height: 2;
+        }
+      }
+    }
+  }
+  #gyoumu {
+    .gyoumu {
+      padding: 3rem 1.5rem 0;
+      @include tab() {
+        padding: 3rem 1.5rem 12rem;
+      }
+
+      h2 {
+        position: relative;
+        text-align: center;
+        margin-bottom: 3rem;
+        @include tab() {
+        }
+        .sankaku {
+          top: -1rem;
+          left: 10rem;
+          @include tab() {
+            top: -1.5rem;
+            left: 43%;
+          }
+        }
+      }
+      ul {
+        padding-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        @include tab() {
+          padding-bottom: 0;
+        }
+        li {
+          width: 100%;
+          @include tab() {
+            width: 30%;
+          }
+          a {
+            color: $color_sub;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 5rem;
+            border: 1px solid $color_sub;
+            line-height: 5rem;
+            font-size: 1.6rem;
+            span {
+              padding-right: 1.5rem;
+            }
+          }
+        }
+      }
+      a:hover {
+        background-color: $color_sub;
+        color: #fff;
+      }
+    }
+  }
+  #service {
+    h2 {
+      position: relative;
+      text-align: center;
+      margin-bottom: 3rem;
+      @include tab() {
+        margin-top: 0;
+      }
+      .sankaku {
+        top: -1rem;
+        left: 10rem;
+        @include tab() {
+          top: -1.5rem;
+          left: 43%;
+        }
+      }
+    }
+    .catch {
+      margin: 0 0 3rem;
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      @include tab() {
+        line-height: 2;
+        font-size: 1.8rem;
+      }
+    }
+    .text,
+    .text-right {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      @include tab() {
+        line-height: 2;
+      }
+    }
+    #buy,
+    #separate,
+    #plan,
+    #brake,
+    #new,
+    #add {
+      background-color: #f7f6f2;
+      @include tab() {
+        margin-bottom: 5rem;
+      }
+      .buy {
+        padding: 2rem 0;
+        @include tab() {
+          padding: 5rem 0 3rem;
+        }
+        .wrap {
+          .box {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 2rem 0;
+            @include tab() {
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            img {
+              border-radius: 5px;
+              @include tab() {
+              }
+            }
+            figure {
+              @include tab() {
+                padding-top: 3rem;
+              }
+            }
+            .right {
+              order: 1;
+              @include tab() {
+                width: 30%;
+                order: 2;
+              }
+              img {
+                max-height: 350px;
+                object-fit: cover;
+                @include tab() {
+                  max-height: 350px;
+                  width: auto;
+                }
+              }
+            }
+            .text {
+              order: 2;
+              @include tab() {
+                order: 1;
+              }
+            }
+            .left {
+              @include tab() {
+                width: 35%;
+                padding-right: 3rem;
+              }
+            }
+
+            .text {
+              @include tab() {
+                width: 70%;
+                padding-right: 3rem;
+              }
+            }
+            .text-right {
+              @include tab() {
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+    #separate,
+    #brake,
+    #add {
+      background-color: #fff;
+      @include tab() {
+      }
+      .separate {
+        .wrap {
+        }
+      }
+      .buy {
+        padding: 2rem 0;
+        @include tab() {
+          padding: 5rem 0 3rem;
+        }
+      }
+    }
+    section::before {
+      content: "";
+      display: block;
+      padding-top: 80px;
+      margin-top: -80px;
+    }
+  }
+
+  .photos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+    @include tab() {
+      width: 80%;
+      flex-direction: row;
+      gap: 3rem;
+    }
+    figure {
+      padding: 5px;
+      @include tab() {
+        padding: unset;
+      }
+      img {
+        height: 16rem;
+        @include tab() {
+          height: 40rem;
+        }
+      }
+    }
+  }
+
+  .contact_us {
+    background-color: #f7f6f2;
+    padding: 5rem 0;
+    @include tab() {
+      padding: 10rem 0;
+    }
+    .contents {
+      @include tab() {
+      }
+      h2 {
+        position: relative;
+        margin: 0 0 0 2rem;
+        @include tab() {
+          text-align: center;
+        }
+
+        .sankaku {
+          transform: rotate(0);
+          border-width: 7px 0 7px 12px;
+          border-color: transparent transparent transparent $color_sub;
+          top: 1rem;
+          left: -2rem;
+          @include tab() {
+            left: 32%;
+            top: 1.7rem;
+          }
+        }
+      }
+      p {
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+        @include tab() {
+          padding-bottom: 5rem;
+
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+      .contact_btns {
+        display: flex;
+        flex-direction: column;
+        @include tab() {
+          flex-direction: row;
+          gap: 0 10rem;
+        }
+        &_link {
+          position: relative;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $color_sub;
+          height: 4rem;
+          line-height: 1rem;
+          color: #fff;
+          text-align: center;
+          font-size: 1.6rem;
+          margin: 0 auto 2rem;
+          @include tab() {
+            height: 5rem;
+            font-size: 1.8rem;
+            line-height: 5rem;
+            margin: 0 auto;
+          }
+          &:last-child {
+            font-size: 2rem;
+            margin: 0 auto;
+          }
+          .material-symbols-outlined {
+            padding-right: 1rem;
+            font-size: 2rem;
+            :before {
+              font-family: "Material Icons";
+              content: "e0b0";
+            }
+          }
+        }
+      }
+    }
+  }
+}
