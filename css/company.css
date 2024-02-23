@@ -130,7 +130,7 @@ h2 {
 @media screen and (min-width: 1023px) {
   .header {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    height: 16rem;
+    height: 12rem;
   }
 }
 
@@ -144,6 +144,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0 0 0;
 }
 .header_inner_pc .nav_inner li {
   padding-right: 4rem;
