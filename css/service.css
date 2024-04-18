@@ -683,7 +683,9 @@ h2 {
   .service #service #new .buy,
   .service #service #add .buy {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding: 5rem 0 3rem;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem 0 7rem;
   }
 }
 .service #service #buy .buy .wrap .box,
@@ -881,7 +883,7 @@ h2 {
   .service #service #brake .buy,
   .service #service #add .buy {
     /* タブレット用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
-    padding: 5rem 0 3rem;
+    padding: 1rem 0 7rem;
   }
 }
 .service #service section::before {

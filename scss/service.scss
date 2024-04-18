@@ -222,7 +222,9 @@
       .buy {
         padding: 2rem 1.5rem;
         @include tab() {
-          padding: 5rem 0 3rem;
+          width: 40%;
+          margin: 0 auto;
+          padding: 1rem 0 7rem;
         }
         .wrap {
           .box {
@@ -314,14 +316,11 @@
       background-color: #fff;
       @include tab() {
       }
-      .separate {
-        .wrap {
-        }
-      }
+
       .buy {
         padding: 2rem 1.5rem;
         @include tab() {
-          padding: 5rem 0 3rem;
+          padding: 1rem 0 7rem;
         }
       }
     }
